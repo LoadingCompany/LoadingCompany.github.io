@@ -23,14 +23,42 @@
       ga('create', 'UA-98321215-1', 'auto');
       ga('send', 'pageview');
     </script>
+    <style type="text/css">
+	.loader {
+	    border: 16px solid #f3f3f3;
+	    border-top: 16px solid blue;
+	    border-radius: 50%;
+	    width: 120px;
+	    height: 120px;
+	    animation: spin 2s linear infinite;
+	}
+	@keyframes spin {
+	    0% { transform: rotate(0deg); }
+	    100% { transform: rotate(360deg); }
+	}
+    </style>
   </head>
   <body>
     <div class="container">
         <div class="text-center">
-            <h1>The Loading Company</h1>
+        	<table style="margin-top: 40px; margin-bottom: 20px; margin-left: auto; margin-right: auto">
+        		<tr>
+	        		<td align="left"><h4 style="margin-top: 0; margin-bottom: 0"><strong>THE</strong></h4></td>
+            	</tr>
+        		<tr>
+	        		<td><h1 style="margin-top: 0; margin-bottom: 0"><strong>L<i class="fa fa-circle" aria-hidden="true"></i>ADING</strong></h1></td>
+	        	</tr>
+	        	<tr>
+		        	<td align="right"><h4 style="margin-top: 0; margin-bottom: 0"><strong>COMPANY</strong></h4></td>
+            	</tr>
+            </table>
+            <div style="margin-top: 20px; margin-bottom: 10px; margin-left: auto; margin-right: auto" class="text-center loader"></div>
             <p>Loading...</p>
-            <a href="https://twitter.com/LoadingCo"><i class="fa fa-twitter jumbotron-icon fa-6" aria-hidden="true"></i></a>
-            <a href="https://github.com/LoadingCompany/LoadingCompany.github.io"><i class="fa fa-github jumbotron-icon fa-6" aria-hidden="true"></i></a>
+            <h3>
+	            <a href="https://twitter.com/LoadingCo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	            <a href="https://github.com/LoadingCompany/LoadingCompany.github.io"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </h3>
+            &copy;2017 The Loading Company 
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
